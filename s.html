@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide Image</title>
+	<style type="text/css">
+		#mybutton {
+			margin-left: 80px;
+		}
+		#p {
+			text-align: center;
+		}
+		#p2 {
+			display:none;
+			}
+			
+	</style>
+</head>
+<body>
+	<div>
+		<p><img id="p" src="giphy.GIF"></p>
+		<button id="mybutton">Click Here</button>
+		<img id ="p2" src ="aggipetti Macha.GIF"></img>
+		
+	</div>
+	<script type="text/javascript">
+		var button = document.getElementById("mybutton");
+		var image = document.getElementById("p");
+		var image2 = document.getElementById("p2");
+
+		button.onclick = function() {
+			image.style.display = "none";
+			image2.style.display = "block"
+		};
+	</script>
+</body>
+</html>
